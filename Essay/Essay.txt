@@ -1,0 +1,74 @@
+1. Apa itu React?
+React adalah sebuah library JavaScript yang digunakan untuk membangun user interface yang interaktif. Library ini dibuat oleh Facebook dan bersifat open source. Library ini sangat populer digunakan dan selalu dikembangkan baik oleh kontributor utama ataupun komunitas 
+
+2. Apa keunggulan React?
+Mudah dipelajari dan digunakan. Developer yang sudah memahami JavaScript bisa mempelajari cara menggunakan React dengan cepat karena library ini bergantung sepenuhnya pada JavaScript dan metode berbasis komponen.
+Mendukung komponen yang reusable. Dengan React, Anda bisa menggunakan lagi komponen yang sudah dikembangkan menjadi aplikasi. Hal ini dapat meningkatkan efisiensi dan konsistensi dalam pengembangan kode.
+Mudah untuk menulis komponen. React menggunakan JSX, sebuah ekstensi sintaks JavaScript yang memungkinkan Anda untuk memodifikasi DOM menggunakan kode HTML yang lebih sederhana. JSX terlihat seperti HTML, tetapi memiliki fungsi seperti JavaScript.
+Performa tinggi. React menggunakan Virtual DOM, sebuah teknologi yang memungkinkan React untuk memperbarui data dengan seefisien mungkin. Virtual DOM juga memungkinkan pembuatan aplikasi menjadi lebih cepat dan responsive231.
+SEO-friendly. React mendukung rendering di sisi server, yang berarti Anda bisa menghasilkan HTML statis dari komponen React. Hal ini dapat meningkatkan performa dan SEO dari aplikasi Anda1.
+
+3. Apa itu SPA pada React?
+SPA atau Single Page Application adalah sebuah teknik untuk membuat aplikasi web yang hanya menggunakan satu halaman saja. Dengan SPA, Anda tidak perlu memuat ulang halaman web saat berpindah halaman atau mengirim permintaan ke server, tetapi hanya mengubah sebagian tampilan yang dibutuhkan1. SPA dapat meningkatkan performa, responsivitas, dan pengalaman pengguna dari aplikasi web Anda.
+
+React adalah sebuah library JavaScript yang sangat cocok untuk membuat SPA. React memungkinkan Anda untuk membuat komponen yang dapat merender tampilan yang berbeda berdasarkan data dan state. React juga menggunakan Virtual DOM, sebuah teknologi yang membandingkan perubahan data dengan DOM asli dan hanya memperbarui bagian yang berubah saja2. React juga mendukung server-side rendering, yang dapat membantu SEO dan performa aplikasi web Anda.
+
+
+4.Apa itu state dan props? Apa perbedaannya?
+
+State adalah sebuah objek JavaScript yang menyimpan data terkini dalam sebuah komponen React. State bersifat privat dan hanya relevan terhadap komponen itu sendiri. State dapat berubah-ubah sesuai dengan interaksi pengguna atau perubahan data. Ketika state berubah, komponen akan merender ulang tampilannya.
+
+State dapat dideklarasikan dengan menggunakan React Hook useState atau dengan membuat kelas komponen yang mewarisi React.Component. State dapat diakses dengan menggunakan sintaks this.state.namaProperti dan dapat diubah dengan menggunakan sintaks this.setState({namaProperti: nilaiBaru})
+
+Props adalah sebuah mekanisme untuk mengirimkan data dari sebuah komponen ke komponen lainnya di React. Props dapat digunakan untuk mengirimkan data seperti string, angka, objek, array, dan fungsi. Props diteruskan ke komponen melalui atribut HTML
+
+perbedaan sebagai berikut:
+
+Props adalah data yang diteruskan ke komponen dari komponen lain atau dari pemanggilnya. Props bersifat read-only, yang artinya tidak bisa diubah oleh komponen yang menerimanya. Props biasa digunakan untuk berkomunikasi antar komponen, terutama dari komponen induk ke komponen anak.
+State adalah data yang dikelola oleh komponen itu sendiri. State bersifat privat, yang artinya hanya bisa diakses dan diubah oleh komponen tersebut. State biasa digunakan untuk menyimpan dan mengubah data yang berubah-ubah sesuai dengan interaksi pengguna atau perubahan data
+
+5.Kapan harus menggunakan state dan props? Berikan contoh studi kasus
+
+State dan props adalah dua konsep penting dalam React yang berhubungan dengan data dan UI. Secara singkat, state adalah data yang berubah-ubah dan dimiliki oleh komponen itu sendiri, sedangkan props adalah data yang tetap dan dilewatkan dari komponen lain. Kita harus menggunakan state dan props sesuai dengan kebutuhan dan fungsi komponen yang kita buat.
+
+Berikut adalah contoh studi kasus yang menunjukkan kapan harus menggunakan state dan props:
+
+Aplikasi Todo List: Aplikasi ini memungkinkan pengguna untuk membuat, menyelesaikan, dan menghapus daftar tugas yang ingin dilakukan. Aplikasi ini terdiri dari beberapa komponen, yaitu:
+TodoApp: Komponen utama yang mengatur seluruh aplikasi. Komponen ini menggunakan state untuk menyimpan daftar tugas yang dibuat oleh pengguna. Komponen ini juga memiliki fungsi-fungsi untuk menambahkan, menyelesaikan, dan menghapus tugas. Komponen ini melewatkan state dan fungsi-fungsi tersebut sebagai props ke komponen-komponen lainnya.
+TodoForm: Komponen yang menampilkan form untuk memasukkan tugas baru. Komponen ini menggunakan props untuk menerima fungsi untuk menambahkan tugas dari TodoApp. Komponen ini juga menggunakan state lokal untuk menyimpan nilai input yang dimasukkan oleh pengguna.
+TodoList: Komponen yang menampilkan daftar tugas yang ada. Komponen ini menggunakan props untuk menerima state daftar tugas dan fungsi untuk menyelesaikan dan menghapus tugas dari TodoApp. Komponen ini melewatkan props tersebut ke komponen TodoItem.
+TodoItem: Komponen yang menampilkan detail tugas, seperti nama, status, dan tombol aksi. Komponen ini menggunakan props untuk menerima data dan fungsi tugas dari TodoList.
+Aplikasi Kalkulator: Aplikasi ini memungkinkan pengguna untuk melakukan operasi aritmatika sederhana, seperti penjumlahan, pengurangan, perkalian, dan pembagian. Aplikasi ini terdiri dari beberapa komponen, yaitu:
+Calculator: Komponen utama yang mengatur seluruh aplikasi. Komponen ini menggunakan state untuk menyimpan nilai-nilai yang dibutuhkan untuk perhitungan, seperti angka pertama, angka kedua, operator, dan hasil. Komponen ini juga memiliki fungsi-fungsi untuk mengubah state berdasarkan input pengguna. Komponen ini melewatkan state dan fungsi-fungsi tersebut sebagai props ke komponen-komponen lainnya.
+Display: Komponen yang menampilkan nilai-nilai yang ada pada state Calculator, seperti angka pertama, angka kedua, operator, dan hasil. Komponen ini menggunakan props untuk menerima state dari Calculator.
+Keypad: Komponen yang menampilkan tombol-tombol untuk memasukkan angka, operator, dan aksi lainnya, seperti hapus, sama dengan, dan koma. Komponen ini menggunakan props untuk menerima fungsi-fungsi untuk mengubah state dari Calculator. Komponen ini melewatkan props tersebut ke komponen Button.
+Button: Komponen yang menampilkan tombol dengan nilai dan fungsi tertentu. Komponen ini menggunakan props untuk menerima nilai dan fungsi dari Keypad. Komponen ini juga memiliki event handler untuk memanggil fungsi yang sesuai dengan nilai tombol.
+
+6. Apa itu state management dan kapan harus menggunakannya?
+State management pada react adalah proses untuk mengelola dan mempertahankan keadaan data dan komponen dalam aplikasi react1. State management pada react dibutuhkan karena react menggunakan konsep one-way data flow, artinya data hanya mengalir dari atas ke bawah (dari parent ke child) melalui props2. Dengan menggunakan state management, kita bisa membuat aplikasi react yang lebih mudah di-update, di-debug, dan di-test.
+
+Ada beberapa cara untuk melakukan state management pada react, seperti menggunakan hook useState, useReducer, dan useContext4, atau menggunakan library eksternal seperti Redux, MobX, Recoil, dll5. Pemilihan metode state management tergantung pada kebutuhan dan skala aplikasi react yang kita kembangkan. Secara umum, kita harus menggunakan state management pada react ketika kita ingin:
+
+Menyimpan dan mengubah data yang berubah-ubah seiring waktu, seperti input pengguna, status loading, data dari server, dll.
+Membagikan data antara komponen yang berbeda tingkat atau lokasi, tanpa harus melewati props secara manual.
+Memisahkan logika bisnis dari tampilan UI, sehingga kode menjadi lebih modular dan reusable.
+Mengontrol alur dan transisi aplikasi, seperti routing, navigasi, autentikasi, dll.
+
+7. Apa itu ORM/ODM?
+ORM/ODM adalah singkatan dari Object Relational Mapping dan Object Document Mapping, yaitu teknik yang digunakan untuk memetakan antara model objek dalam aplikasi dengan representasi data dalam basis data1. ORM digunakan untuk basis data relasional, seperti MySQL, PostgreSQL, atau SQLite, yang menyimpan data dalam bentuk tabel dengan kolom dan baris. ODM digunakan untuk basis data dokumen, seperti MongoDB atau DynamoDB, yang menyimpan data dalam bentuk dokumen dengan struktur JSON atau BSON.
+
+Tujuan dari ORM/ODM adalah untuk memudahkan pengembang untuk berinteraksi dengan basis data tanpa harus menulis query bahasa basis data secara manual. ORM/ODM juga membantu dalam serialisasi/deserialisasi data ke objek, penegakan skema, dan manajemen hubungan antara data3. Beberapa contoh ORM/ODM yang populer adalah:
+
+Beanie: ODM asinkron untuk Python dan MongoDB, berbasis Motor dan Pydantic.
+Doctrine: ORM untuk PHP dan MongoDB, yang juga mendukung dokumen tersemat atau terreferensi.
+Mongoid: ODM untuk Ruby dan MongoDB, yang menyediakan API yang mirip dengan Active Record.
+
+8. Apa perbedaan SQL dan noSQL
+
+SQL dan NoSQL adalah dua jenis database yang berbeda dalam cara menyimpan dan mengakses data. Berikut adalah beberapa perbedaan utama antara SQL dan NoSQL:
+
+SQL adalah database relasional, yang berarti data disimpan dalam tabel dengan kolom dan baris yang terstruktur. NoSQL adalah database non-relasional, yang berarti data disimpan dalam format yang lebih fleksibel, seperti dokumen, grafik, atau pasangan nilai kunci.
+SQL menggunakan bahasa kueri terstruktur (Structured Query Language) untuk memanipulasi data. NoSQL menggunakan bahasa kueri yang tidak terstruktur atau berbeda-beda tergantung pada jenis database.
+SQL memiliki skema yang telah ditentukan sebelumnya, yang berarti struktur dan tipe data harus ditentukan sebelum menyimpan data. NoSQL memiliki skema yang dinamis, yang berarti data dapat disimpan tanpa harus menentukan struktur atau tipe data terlebih dahulu.
+SQL dapat diskalakan secara vertikal, yang berarti untuk meningkatkan performa, kita harus menambahkan sumber daya ke server tunggal. NoSQL dapat diskalakan secara horizontal, yang berarti untuk meningkatkan performa, kita dapat menambahkan server tambahan yang bekerja secara paralel.
+SQL cocok untuk aplikasi yang membutuhkan konsistensi, integritas, dan transaksi data yang tinggi, seperti sistem keuangan, e-commerce, atau manajemen inventori. NoSQL cocok untuk aplikasi yang membutuhkan fleksibilitas, kecepatan, dan volume data yang besar, seperti media sosial, game, atau analitik.
