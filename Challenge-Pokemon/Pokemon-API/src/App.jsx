@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    // Use the className attribute to add Bootstrap classes
+    
     <div className="container">
           <SearchBar />
           <CardList />

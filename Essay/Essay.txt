@@ -5,13 +5,13 @@ React adalah sebuah library JavaScript yang digunakan untuk membangun user inter
 Mudah dipelajari dan digunakan. Developer yang sudah memahami JavaScript bisa mempelajari cara menggunakan React dengan cepat karena library ini bergantung sepenuhnya pada JavaScript dan metode berbasis komponen.
 Mendukung komponen yang reusable. Dengan React, Anda bisa menggunakan lagi komponen yang sudah dikembangkan menjadi aplikasi. Hal ini dapat meningkatkan efisiensi dan konsistensi dalam pengembangan kode.
 Mudah untuk menulis komponen. React menggunakan JSX, sebuah ekstensi sintaks JavaScript yang memungkinkan Anda untuk memodifikasi DOM menggunakan kode HTML yang lebih sederhana. JSX terlihat seperti HTML, tetapi memiliki fungsi seperti JavaScript.
-Performa tinggi. React menggunakan Virtual DOM, sebuah teknologi yang memungkinkan React untuk memperbarui data dengan seefisien mungkin. Virtual DOM juga memungkinkan pembuatan aplikasi menjadi lebih cepat dan responsive231.
-SEO-friendly. React mendukung rendering di sisi server, yang berarti Anda bisa menghasilkan HTML statis dari komponen React. Hal ini dapat meningkatkan performa dan SEO dari aplikasi Anda1.
+Performa tinggi. React menggunakan Virtual DOM, sebuah teknologi yang memungkinkan React untuk memperbarui data dengan seefisien mungkin. Virtual DOM juga memungkinkan pembuatan aplikasi menjadi lebih cepat dan responsive.
+SEO-friendly. React mendukung rendering di sisi server, yang berarti Anda bisa menghasilkan HTML statis dari komponen React. Hal ini dapat meningkatkan performa dan SEO dari aplikasi Anda.
 
 3. Apa itu SPA pada React?
-SPA atau Single Page Application adalah sebuah teknik untuk membuat aplikasi web yang hanya menggunakan satu halaman saja. Dengan SPA, Anda tidak perlu memuat ulang halaman web saat berpindah halaman atau mengirim permintaan ke server, tetapi hanya mengubah sebagian tampilan yang dibutuhkan1. SPA dapat meningkatkan performa, responsivitas, dan pengalaman pengguna dari aplikasi web Anda.
+SPA atau Single Page Application adalah sebuah teknik untuk membuat aplikasi web yang hanya menggunakan satu halaman saja. Dengan SPA, Anda tidak perlu memuat ulang halaman web saat berpindah halaman atau mengirim permintaan ke server, tetapi hanya mengubah sebagian tampilan yang dibutuhkan. SPA dapat meningkatkan performa, responsivitas, dan pengalaman pengguna dari aplikasi web Anda.
 
-React adalah sebuah library JavaScript yang sangat cocok untuk membuat SPA. React memungkinkan Anda untuk membuat komponen yang dapat merender tampilan yang berbeda berdasarkan data dan state. React juga menggunakan Virtual DOM, sebuah teknologi yang membandingkan perubahan data dengan DOM asli dan hanya memperbarui bagian yang berubah saja2. React juga mendukung server-side rendering, yang dapat membantu SEO dan performa aplikasi web Anda.
+React adalah sebuah library JavaScript yang sangat cocok untuk membuat SPA. React memungkinkan Anda untuk membuat komponen yang dapat merender tampilan yang berbeda berdasarkan data dan state. React juga menggunakan Virtual DOM, sebuah teknologi yang membandingkan perubahan data dengan DOM asli dan hanya memperbarui bagian yang berubah saja. React juga mendukung server-side rendering, yang dapat membantu SEO dan performa aplikasi web Anda.
 
 
 4.Apa itu state dan props? Apa perbedaannya?
@@ -45,7 +45,7 @@ Keypad: Komponen yang menampilkan tombol-tombol untuk memasukkan angka, operator
 Button: Komponen yang menampilkan tombol dengan nilai dan fungsi tertentu. Komponen ini menggunakan props untuk menerima nilai dan fungsi dari Keypad. Komponen ini juga memiliki event handler untuk memanggil fungsi yang sesuai dengan nilai tombol.
 
 6. Apa itu state management dan kapan harus menggunakannya?
-State management pada react adalah proses untuk mengelola dan mempertahankan keadaan data dan komponen dalam aplikasi react1. State management pada react dibutuhkan karena react menggunakan konsep one-way data flow, artinya data hanya mengalir dari atas ke bawah (dari parent ke child) melalui props2. Dengan menggunakan state management, kita bisa membuat aplikasi react yang lebih mudah di-update, di-debug, dan di-test.
+State management pada react adalah proses untuk mengelola dan mempertahankan keadaan data dan komponen dalam aplikasi react1. State management pada react dibutuhkan karena react menggunakan konsep one-way data flow, artinya data hanya mengalir dari atas ke bawah (dari parent ke child) melalui props. Dengan menggunakan state management, kita bisa membuat aplikasi react yang lebih mudah di-update, di-debug, dan di-test.
 
 Ada beberapa cara untuk melakukan state management pada react, seperti menggunakan hook useState, useReducer, dan useContext4, atau menggunakan library eksternal seperti Redux, MobX, Recoil, dll5. Pemilihan metode state management tergantung pada kebutuhan dan skala aplikasi react yang kita kembangkan. Secara umum, kita harus menggunakan state management pada react ketika kita ingin:
 

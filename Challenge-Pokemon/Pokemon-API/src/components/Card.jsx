@@ -1,11 +1,7 @@
-// src/components/Card.jsx
-
-// Import React
 import React from "react";
 
-// Define the Card component
 const Card = ({ item }) => {
-  // Return the JSX for the card
+
   return (
     <li>
     <a href="" class="card">
@@ -25,5 +21,4 @@ const Card = ({ item }) => {
   );
 };
 
-// Export the Card component
 export default Card;
