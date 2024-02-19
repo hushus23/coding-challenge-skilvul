@@ -47,7 +47,7 @@ Button: Komponen yang menampilkan tombol dengan nilai dan fungsi tertentu. Kompo
 6. Apa itu state management dan kapan harus menggunakannya?
 State management pada react adalah proses untuk mengelola dan mempertahankan keadaan data dan komponen dalam aplikasi react1. State management pada react dibutuhkan karena react menggunakan konsep one-way data flow, artinya data hanya mengalir dari atas ke bawah (dari parent ke child) melalui props. Dengan menggunakan state management, kita bisa membuat aplikasi react yang lebih mudah di-update, di-debug, dan di-test.
 
-Ada beberapa cara untuk melakukan state management pada react, seperti menggunakan hook useState, useReducer, dan useContext4, atau menggunakan library eksternal seperti Redux, MobX, Recoil, dll5. Pemilihan metode state management tergantung pada kebutuhan dan skala aplikasi react yang kita kembangkan. Secara umum, kita harus menggunakan state management pada react ketika kita ingin:
+Ada beberapa cara untuk melakukan state management pada react, seperti menggunakan hook useState, useReducer, dan useContext, atau menggunakan library eksternal seperti Redux, MobX, Recoil, dll5. Pemilihan metode state management tergantung pada kebutuhan dan skala aplikasi react yang kita kembangkan. Secara umum, kita harus menggunakan state management pada react ketika kita ingin:
 
 Menyimpan dan mengubah data yang berubah-ubah seiring waktu, seperti input pengguna, status loading, data dari server, dll.
 Membagikan data antara komponen yang berbeda tingkat atau lokasi, tanpa harus melewati props secara manual.
